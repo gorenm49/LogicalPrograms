@@ -6,7 +6,7 @@ namespace LogicalPrograms
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter number for select Option: \n 1. Fibonacci \n 2. Perfect Number \n 3. Prime Number \n 4. Exit.\n ");
+            Console.WriteLine("Enter number for select Option: \n 1. Fibonacci \n 2. Perfect Number \n 3. Prime Number \n 4. Reverse Number \n 5. Exit.\n ");
             int num = Convert.ToInt32(Console.ReadLine());
 
             switch (num)
@@ -24,6 +24,10 @@ namespace LogicalPrograms
                     pn.prime();
                     break;
                 case 4:
+                    ReverseNumber rn = new ReverseNumber();
+                    rn.reverse();
+                    break;
+                case 5:
                     break;
                 default:
                     System.Console.WriteLine("Choose correct option..");
