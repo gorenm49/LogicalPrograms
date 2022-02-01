@@ -6,7 +6,7 @@ namespace LogicalPrograms
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter number for select Option: \n 1. Fibonacci \n 2. Perfect Number \n 3. Prime Number \n 4. Reverse Number \n 5. Vending Machine \n 6. Monthly payment \n 7. Exit.\n ");
+            Console.WriteLine("Enter number for select Option: \n 1. Fibonacci \n 2. Perfect Number \n 3. Prime Number \n 4. Reverse Number \n 5. Vending Machine \n 6. Monthly payment \n 7. Calendar \n 8. Exit.\n ");
             int num = Convert.ToInt32(Console.ReadLine());
 
             switch (num)
@@ -36,6 +36,10 @@ namespace LogicalPrograms
                     pay1.monthlyPayment();
                     break;
                 case 7:
+                    Calendar c1 = new Calendar();
+                    c1.dayOfWeek();
+                    break;
+                case 8:
                     break;
                 default:
                     System.Console.WriteLine("Choose correct option..");
