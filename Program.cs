@@ -6,7 +6,7 @@ namespace LogicalPrograms
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter number for select Option: \n 1. Fibonacci \n 2. Perfect Number \n 3. Prime Number \n 4. Reverse Number \n 5. Vending Machine \n 6. Monthly payment \n 7. Calendar \n 8. Temperature Calculation \n 9. Exit.\n ");
+            Console.WriteLine("Enter number for select Option: \n 1. Fibonacci \n 2. Perfect Number \n 3. Prime Number \n 4. Reverse Number \n 5. Vending Machine \n 6. Monthly payment \n 7. Calendar \n 8. Temperature Calculation \n 9. Coupon Number \n 10. Exit.\n ");
             int num = Convert.ToInt32(Console.ReadLine());
 
             switch (num)
@@ -44,11 +44,15 @@ namespace LogicalPrograms
                     t1.temperaturConversion();
                     break;
                 case 9:
+                    CouponNumbers c = new CouponNumbers();
+                    c.checkCoupon(); 
+                    break;
+                case 10:
                     break;
                 default:
                     System.Console.WriteLine("Choose correct option..");
-                    break;
-            }           
+                    break;               
+            }                     
        }
     }
 }
